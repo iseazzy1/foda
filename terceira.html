@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Connect</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #c4b5a7;
+            background-image: url('montanha.jpg');
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            background-color: #000;
+            color: white;
+        }
+        .header .logo {
+            font-size: 24px;
+            font-weight: bold;
+            background: white;
+            color: black;
+            padding: 5px 10px;
+            border-radius: 10px;
+        }
+        .header nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px;
+        }
+        .left {
+            width: 50%;
+        }
+        .left h2 {
+            font-weight: bold;
+            font-size: 22px;
+        }
+        .left p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .button {
+            background-color: black;
+            color: white;
+            padding: 10px 10px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .right {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+        .quiz-button {
+            display: block;
+            background: black;
+            color: white;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 15px;
+            font-weight: bold;
+            font-size: 18px;
+            width: 200px;
+        }
+        .icon {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">Quiz Connect</div>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Termos de Uso</a>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="left">
+            <h2>Por que nosso site é Funcional?</h2>
+            <p>É um site de provas simplificado para pessoas com D.I e TEA. Ele oferece um ambiente acessível, seguro e personalizado, permitindo aprendizado no próprio ritmo, sem pressões. Ele promove o desenvolvimento cognitivo e a autonomia, tornando o processo educacional mais inclusivo e eficaz.</p>
+            <button class="button">Saber mais</button>
+        </div>
+        <div class="right">
+            <button class="quiz-button">9º ano Passe</button>
+            <button class="quiz-button">3º ano Passe</button>
+            <button class="quiz-button">3º ano SAEP</button>
+        </div>
+    </div>
+</body>
+</html>
