@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz Connect</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/leozinho2/style2.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Quiz Connect</div>
+    <nav>
+      <ul>
+        <li><a href="#">Início</a></li>
+        <li><a href="#">Termos de Uso</a></li>
+      </ul>
+    </nav>
+    <img src="/fotosS.A/sesi-logo.png" alt="SESI Logo" class="sesi-logo">
+    <!-- Ícone de usuário (opcional) -->
+    <div class="user-icon"><img src="/fotosS.A/logo.png" alt=" l"></div>
+  </header>
+
+  <!-- ==============================
+       Conteúdo Principal
+       ============================== -->
+  <div class="container">
+    <!-- Nuvens decorativas -->
+    <div class="cloud cloud1"></div>
+    <script
+    src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+    type="module"
+  ></script>
+  
+  <dotlottie-player
+    src="https://lottie.host/3683f09f-c06e-486e-8505-61604f951860/kTkXHyqx7w.lottie"
+    background="transparent"
+    speed="1"
+    style="width: 300px; height: 300px"
+    loop
+    autoplay
+  ></dotlottie-player>
+    <div class="cloud cloud2"></div>
+
+    <div class="content-wrapper">
+      <!-- Painel esquerdo: texto explicativo -->
+      <div class="left-panel panel">
+        <h2>Por que nosso site é Funcional?</h2>
+        <p>
+          É um site de provas simplificado para pessoas com D.I e T.E.A,
+          oferecendo um ambiente acessível, seguro e personalizado.
+          Permite o aprendizado no próprio ritmo, promovendo o
+          desenvolvimento cognitivo e a autonomia, tornando o processo
+          educacional mais inclusivo e eficaz.
+        </p>
+        <button>Saiba Mais</button>
+      </div>
+
+      <!-- Painel direito: botões de escolha de provas/quiz -->
+      <div class="right-panel panel">
+        <div class="question-icon"></div>
+        <div class="buttons-area">
+          <button>9º ano Passe</button>
+          <button>3º ano Passe</button>
+          <button>3º ano SAEP</button>
+        </div>
+        <!-- Puzzle icônico -->
+        <div class="puzzle-icon"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==============================
+       Scripts JavaScript
+       ============================== -->
+  <script>
+    // Exemplo: clique no botão "Saiba Mais" para exibir alerta
+    document.querySelector('.left-panel button').addEventListener('click', () => {
+      alert('Aqui você pode inserir mais informações sobre o projeto!');
+    });
+  </script>
+</body>
+</html>
