@@ -1,4 +1,18 @@
-/* Reset básico e variáveis */
+.quiz-btn {
+  width: 80%; /* ajuste o tamanho do botão */
+  height: 50px; /* ajuste o tamanho do botão */
+  font-size: 16px; /* ajuste o tamanho da fonte */
+  text-align: center; /* alinhe o texto ao centro */
+  padding: 10px; /* adicione um pouco de espaço entre o texto e a borda do botão */
+  border: none; /* remova a borda do botão */
+  left: -50px;
+  position: flex  ;
+  margin-top: 10px;
+  border-radius: 5px; /* adicione um pouco de arredondamento às bordas do botão */
+  color: #000000; /* ajuste a cor do texto do botão */
+  cursor: pointer; /* mude o cursor para uma mão quando o usuário passa o mouse sobre o botão */
+}
+
 :root {
   --primary-color: #8c7b6b;
   --secondary-color: #f2ede6;
@@ -220,20 +234,15 @@ nav ul li a:hover {
   align-items: center;
 }
 
-.right-panel h1 {
-  font-size: 1.8rem;
-  margin-bottom: 20px;
-  color: var(--primary-color);
-}
-
 .buttons-area {
   width: 100%;
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  gap: 10px;
-  top: 25px;
-  margin-top: 20px;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    gap: 10px;
+    top: 70px;
+    left: 45px;
+    margin-top: 20px;
 }
 
 .buttons-area button {
@@ -242,10 +251,6 @@ nav ul li a:hover {
   border: 2px solid var(--primary-color);
   border-radius: 10px;
   font-size: 1.1rem;
-  width: 350px;
-  top: -30px;
-  left: 22px;
-  position: relative;
   cursor: pointer;
   transition: all 0.3s;
   text-align: center;
@@ -255,6 +260,15 @@ nav ul li a:hover {
   background-color: #d8ccc1;
   transform: scale(1.02);
 }
+
+h1 {
+  text-align: center;
+  bottom: 210px;
+  position: absolute;
+  left: 35px;
+  margin-top: -50px;
+}
+
 
 /* ==============================
    Elementos Decorativos FIXOS

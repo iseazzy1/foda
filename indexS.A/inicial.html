@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>Quiz Connect</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/leozinho2/style2.css">
+  <link rel="stylesheet" href="/leozinho2/inicial.css">
 </head>
 <body>
   <header>
@@ -12,7 +12,7 @@
     <nav>
       <ul>
         <li><a href="#">Início</a></li>
-        <li><a href="/indexS.A/secondpart.html">cadastro</a></li>
+        <li><a href="/indexS.A/cadastro.html">cadastro</a></li>
       </ul>
     </nav>
     <img src="/fotosS.A/sesi-logo.png" alt="SESI Logo" class="sesi-logo">
@@ -54,24 +54,16 @@
       </div>
 
       <!-- Painel direito -->
-      <div class="right-panel panel">
-        <h1>Selecione sua sala</h1>
-        <div class="question-icon"></div>
-        <div class="buttons-area">
-          <a href="/indexS.A/selecionarmateria.html" class="quiz-btn-link">
-            <button class="quiz-btn">9º ano Passe</button>
-          </a>
-          <a href="/indexS.A/selecionarmateria.html" class="quiz-btn-link">
-            <button class="quiz-btn">3º ano Passe</button>
-          </a>
-          <a href="/indexS.A/selecionarmateria.html" class="quiz-btn-link">
-            <button class="quiz-btn">3º ano SAEP</button>
-          </a>
-        </div>
-        <div class="puzzle-icon"></div>
-      </div>
-    </div>
-  </div>
+     <div class="right-panel panel">
+       <div class="question-icon"></div>
+       <div class="buttons-area">
+        <h1>Escolha sua turma</h1>
+         <button class="quiz-btn" type="button" onclick="window.location.href='9ano.html'">9º ano Passe</button>
+         <button class="quiz-btn" type="button" onclick="window.location.href='3ano.html'">3º ano Passe</button>
+         <button class="quiz-btn" type="button" onclick="window.location.href='3saep.html'">3º ano saep</button>
+       </div>
+       <div class="puzzle-icon"></div>
+     </div>
 
   <script>
     // Função para o botão Saiba Mais
@@ -79,9 +71,16 @@
       alert('ferramentas adaptáveis, promovemos desenvolvimento cognitivo, autonomia e inclusão, tornando a educação mais eficaz e acolhedora.  Simplificar para incluir, adaptar para evoluir!');
     });
 
+    // Função para os botões de quiz
+    document.querySelectorAll('.quiz-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        alert(`Você selecionou: ${btn.textContent}`);
+      });
+    });
+
     // Função para o botão de login
     document.querySelector('.login-btn').addEventListener('click', () => {
-     window.location.href = '/indexS.A/indexpurple.html'; 
+     window.location.href = '/indexS.A/login.html'; 
     });
   </script>
 </body>

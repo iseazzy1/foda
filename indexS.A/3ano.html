@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Connect - Áreas do Conhecimento</title>
+    <link rel="stylesheet" href="/leozinho2/escolhamateria.css">
+</head>
+<body>
+    <!-- Header consistente com seus outros códigos -->
+    <header>
+        <div class="logo">Quiz Connect</div>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">cadastro</a></li>
+            </ul>
+        </nav>
+        <img src="/fotosS.A/sesi-logo.png" alt="SESI Logo" class="sesi-logo">
+        <button class="login-btn" title="Login">
+            <img src="/fotosS.A/logo.png" alt="Ícone de Login">
+        </button>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <div class="main-container">
+        <h1 class="title">Escolha sua Área do Conhecimento</h1>
+        
+        <div class="areas-grid">
+            <div class="area-card" onclick="location.href='matematica.html'">
+                <h2>Matemática</h2>
+            </div>
+            
+            <div class="area-card" onclick="location.href='natureza.html'">
+                <h2>Natureza</h2>
+            </div>
+            
+            <div class="area-card" onclick="location.href='humanas.html'">
+                <h2>Humanas</h2>
+            </div>
+            
+            <div class="area-card" onclick="location.href='linguagens.html'">
+                <h2>Linguagens</h2>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Adicione aqui qualquer interação JavaScript necessária
+        document.querySelectorAll('.area-card').forEach(card => {
+            card.addEventListener('click', function() {
+                // Adicione lógica adicional se necessário
+                console.log('Área selecionada:', this.querySelector('h2').textContent);
+            });
+        });
+    </script>
+</body>
+</html>

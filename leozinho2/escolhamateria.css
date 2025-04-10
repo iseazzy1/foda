@@ -1,0 +1,189 @@
+:root {
+    --primary-color: #8c7b6b;
+    --secondary-color: #f2ede6;
+    --background-color: #d9ccc0;
+    --header-gradient: linear-gradient(to right, #000000, #b9b9b9);
+    --text-dark: #333;
+    --text-light: #fff;
+    --card-color-1: #db3636;  /* Matemática */
+    --card-color-2: #4c956c;  /* Natureza */
+    --card-color-3: #502a29;  /* Humanas */
+    --card-color-4: #6d6875;  /* Linguagens */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    left: 20px;
+    margin-top: 20px;
+}
+
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-dark);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.sesi-logo {
+    height: 40px;
+    width: auto;
+    left: 1700px;
+    margin-left: 20px;
+    position: absolute;
+  }
+
+/* HEADER (igual aos seus códigos anteriores) */
+header {
+    background: var(--header-gradient);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    position: relative;
+    height: 70px;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: var(--text-light);
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    position: absolute;
+    top: 28px;
+    left: 200px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-light);
+    font-weight: 500;
+    transition: opacity 0.3s;
+}
+
+nav ul li a:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+.login-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid var(--text-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.login-btn img {
+    width: 60%;
+    height: 60%;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+}
+
+/* CONTEÚDO PRINCIPAL */
+.main-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.title {
+    color: var(--primary-color);
+    margin-bottom: 40px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.areas-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 800px;
+    width: 100%;
+}
+
+.area-card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+
+.area-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.area-card:nth-child(1) {
+    background-color: var(--card-color-1);
+    color: white;
+}
+
+.area-card:nth-child(2) {
+    background-color: var(--card-color-2);
+    color: white;
+}
+
+.area-card:nth-child(3) {
+    background-color: var(--card-color-3);
+    color: white;
+}
+
+.area-card:nth-child(4) {
+    background-color: var(--card-color-4);
+    color: white;
+}
+
+.area-card h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+    .areas-grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+    }
+    
+    .area-card {
+        height: 150px;
+        padding: 20px;
+    }
+    
+    .title {
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+    }
+}

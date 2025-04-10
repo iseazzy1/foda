@@ -8,9 +8,8 @@
     --cloud-color: rgba(255, 255, 255, 0.8);
 }
 .robo2 {
-    bottom: -350px;
+    bottom: -300px;
     position: absolute;
-    height: 200px;
     left: 1100px;
 }
 * {
@@ -104,9 +103,8 @@ nav ul li a:hover {
 .sesi-logo {
     height: 40px;
     width: auto;
-    left: 1700px;
-    margin-left: 20px;
     position: absolute;
+    right: 100px;
 }
 
 .login-btn {
@@ -130,31 +128,14 @@ nav ul li a:hover {
     filter: brightness(0) invert(1);
 }
 
-form  {
-    position: relative;
-    height: 00px;
-    bottom: -50px;
-}
-
-p{
-    bottom: 100px;
-    position: absolute;
-left: 140px;
-top: 390px;
-}
-
 /* FORMULÁRIO DE LOGIN */
 .login-container {
     max-width: 400px;
     width: 90%;
     margin: 80px auto;
-    left: 740px;
+    left: 750px;
     padding: 30px;
-    position: absolute;
     bottom: 100px;
-    height: 400px;
-    width: 380px;
-    box-sizing: content-box;
     position: absolute;
     background-color: white;
     border-radius: 15px;
