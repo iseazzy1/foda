@@ -9,7 +9,7 @@
     
     body {
       background: linear-gradient(135deg, #f0e6d9 0%, #e0c9ab 100%);
-      min-height: 100vh;
+      min-height: 87vh;
       overflow-x: hidden;
       position: relative;
     }
@@ -47,11 +47,12 @@
     }
     
     nav ul li a {
-      text-decoration: none;
-      color: #6a4c2f;
-      font-weight: 500;
-      transition: all 0.3s ease;
-      position: relative;
+      text-decoration:dashed;
+    color: #6a4c2f;
+    top: 3px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    position: relative;
     }
     
     nav ul li a:after {
