@@ -158,6 +158,8 @@ function mostrarResultados() {
     resultadoDetalhes.innerHTML = detalhesHTML;
     resultadoContainer.style.display = "block";
 }
+btnProxima.style.display = "inline-block"; // Troque de "block" para "inline-block"
+btnFinalizar.style.display = "none";
 
 function tentarNovamente() {
     respostas = {};
